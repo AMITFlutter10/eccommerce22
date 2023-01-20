@@ -1,6 +1,5 @@
 import 'package:ecommerce22/view/pages/splashScreen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import '../../pages/register_screen.dart';
 import 'constans.dart';
 
@@ -12,7 +11,7 @@ class AppRouter{
       case  AppRoute.SplashScreen:
         return MaterialPageRoute(builder: (_)=>startScreen );
       case AppRoute.registerScreen:
-        return MaterialPageRoute(builder: (_)=> RegisterScreen() ,);
+        return MaterialPageRoute(builder: (_)=> const RegisterScreen() ,);
       default:
         return MaterialPageRoute(builder: (_)=>SplashScreen());
 
